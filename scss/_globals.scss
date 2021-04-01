@@ -19,7 +19,6 @@ body {
 
 a, a:visited, a:hover {
     text-decoration: none;
-    color: $grayishBlue;
 }
 
 // Flexbox styles
@@ -48,4 +47,13 @@ button, .button {
     border: 0;
     color: $white;
     font-weight: 400;
+}
+
+// Visibility
+.hide-for-mobile {
+    // hide for tablet and mobile devices
+}
+
+.hide-for-desktop {
+    // hide for desktop viewport widths
 }
