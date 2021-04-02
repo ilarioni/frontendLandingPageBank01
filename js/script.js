@@ -12,7 +12,7 @@ btnHamburger.addEventListener('click', function(){
     }
     else {  // open hamburger menu 
         header.classList.add('open');
-        overlay.classList.add('fade-in');
         overlay.classList.remove('fade-out');
+        overlay.classList.add('fade-in');
     }  
 });

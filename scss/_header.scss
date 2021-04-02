@@ -4,11 +4,6 @@
 
     &.open {
 
-        .overlay {
-            display: block;
-            
-        }
-
         .header__menu {
             span:first-child{
                 transform: rotate(45deg);
@@ -23,7 +18,7 @@
     }
 
     .overlay {
-        display: none;
+        // display: none;
         opacity: 0;
         position: fixed;
         top: 3.75rem; //60px
@@ -31,6 +26,7 @@
         bottom: 0px;
         right: 0px;
         background-image: linear-gradient($darkBlue, transparent);
+
     }
 
     nav {
