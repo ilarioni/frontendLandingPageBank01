@@ -1,3 +1,49 @@
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  -webkit-animation: fade-in 300ms ease-in-out forwards;
+          animation: fade-in 300ms ease-in-out forwards;
+}
+
+@-webkit-keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.fade-out {
+  -webkit-animation: fade-out 300ms ease-in-out forwards;
+          animation: fade-out 300ms ease-in-out forwards;
+}
+
 html {
   font-size: 100%;
   -webkit-box-sizing: border-box;
@@ -70,6 +116,10 @@ button, .button {
   }
 }
 
+.header.open .overlay {
+  display: block;
+}
+
 .header.open .header__menu span:first-child {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
@@ -85,6 +135,8 @@ button, .button {
 }
 
 .header .overlay {
+  display: none;
+  opacity: 0;
   position: fixed;
   top: 3.75rem;
   left: 0px;
