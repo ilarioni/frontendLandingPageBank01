@@ -21,6 +21,7 @@
             height: 2px;
             background-color: $darkBlue;
             transition: all 300ms ease-in-out;
+            transform-origin: left center;
 
             &:not(:last-child){
                 margin-bottom: 5px;

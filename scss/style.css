@@ -86,6 +86,8 @@ button, .button {
   background-color: #2d314d;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
+  -webkit-transform-origin: left center;
+          transform-origin: left center;
 }
 
 .header__menu > span:not(:last-child) {
