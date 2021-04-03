@@ -91,6 +91,10 @@ a, a:visited, a:hover {
   text-decoration: none;
 }
 
+.container {
+  padding: 1.0625rem 1.5rem;
+}
+
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -161,10 +165,6 @@ button, .button {
   right: 0px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#2d314d), to(transparent));
   background-image: linear-gradient(#2d314d, transparent);
-}
-
-.header nav {
-  padding: 1.0625rem 1.5rem;
 }
 
 .header__logo img {
