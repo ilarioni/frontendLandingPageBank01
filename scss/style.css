@@ -187,6 +187,18 @@ button, .button {
   margin-bottom: 5px;
 }
 
+.header__menu {
+  background: white;
+  padding: 1.625rem;
+}
+
+.header__menu a {
+  display: block;
+  color: #2d314d;
+  padding: 0.625rem;
+  text-align: center;
+}
+
 .header__links a {
   position: relative;
   font-size: 0.875rem;
