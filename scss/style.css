@@ -194,8 +194,14 @@ button, .button {
 }
 
 .header__menu {
+  position: absolute;
+  width: calc(100% - 3rem);
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   background: white;
   padding: 1.625rem;
+  border-radius: 3px;
 }
 
 .header__menu a {
