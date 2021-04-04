@@ -1,3 +1,7 @@
+.has-fade {
+  visibility: hidden;
+}
+
 @-webkit-keyframes fade-in {
   from {
     visibility: hidden;
@@ -8,6 +12,7 @@
     opacity: 0;
   }
   to {
+    visibility: visible;
     opacity: 1;
   }
 }
@@ -22,12 +27,9 @@
     opacity: 0;
   }
   to {
+    visibility: visible;
     opacity: 1;
   }
-}
-
-.has-fade {
-  visibility: hidden;
 }
 
 .fade-in {
