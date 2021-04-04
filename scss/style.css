@@ -26,6 +26,10 @@
   }
 }
 
+.has-fade {
+  visibility: hidden;
+}
+
 .fade-in {
   -webkit-animation: fade-in 300ms ease-in-out forwards;
           animation: fade-in 300ms ease-in-out forwards;
@@ -200,8 +204,9 @@ button, .button {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   background: white;
+  margin-top: 1.5rem;
   padding: 1.625rem;
-  border-radius: 3px;
+  border-radius: 7px;
 }
 
 .header__menu a {
