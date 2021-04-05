@@ -280,6 +280,7 @@ button, .button {
 }
 
 .hero__image::before {
+  content: "";
   position: absolute;
   background-image: url("/images/image-mockups.png");
   background-size: cover;
