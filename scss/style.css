@@ -137,6 +137,7 @@ a, a:visited, a:hover {
 }
 
 button, .button {
+  display: inline-block;
   padding: 0.875rem 2.1875rem;
   border-radius: 50px;
   cursor: pointer;
@@ -145,6 +146,13 @@ button, .button {
   border: 0;
   color: white;
   font-weight: 400;
+  font-size: 0.875rem;
+  -webkit-transition: opacity 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
+}
+
+button:hover, .button:hover {
+  opacity: 0.75;
 }
 
 @media (max-width: 63.9375em) {
@@ -263,17 +271,6 @@ button, .button {
 
 .header__links a:hover::before {
   opacity: 1;
-}
-
-.header__cta {
-  font-size: 0.875rem;
-  color: white;
-  -webkit-transition: opacity 300ms ease-in-out;
-  transition: opacity 300ms ease-in-out;
-}
-
-.header__cta:hover {
-  opacity: 0.75;
 }
 
 .hero__image {
