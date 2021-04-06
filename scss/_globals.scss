@@ -31,10 +31,43 @@ a, a:visited, a:hover {
 
 // Spacing
 .container {
-    padding-top: 2.25rem;
-    padding-bottom: 2.25rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    max-width: 69.6rem; // 1110px 
+    margin: 0 auto;
+
+    &--pall {
+        padding-top: 2.25rem;
+        padding-bottom: 2.25rem;
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+    }
+
+    // py means padding on vertical y axis also it means padding top and bottom
+    &--py {
+        padding-top: 2.25rem;
+        padding-bottom: 2.25rem;
+    }
+
+    // px measn padding on x axis, left and right, horizontal 
+
+    &--px {
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+    }
+
+    // pt padding top  pr padding right and so on 
+    &--pt {
+        padding-top: 2.25rem;
+    }
+    &--pr {
+        padding-top: 1.5rem;
+    }
+    &--pb {
+        padding-top: 2.25rem;
+    }
+    &--pl {
+        padding-top: 1.5rem;
+    }
+
 }
 
 // Flexbox styles

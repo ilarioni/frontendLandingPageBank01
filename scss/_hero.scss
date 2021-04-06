@@ -14,9 +14,11 @@
         min-height: 17.5rem; // 280px
 
         @include breakpoint-up(large){
-            flex: 1;
+            flex: 3;
             order: 2;
             height: 41rem;
+            background-image: url('/images/bg-intro-desktop.svg');
+            background-position: left center;
         }
 
         &::before {
@@ -37,7 +39,7 @@
         text-align: center;
 
         @include breakpoint-up(large){
-            flex: 1;
+            flex: 2;
             order: 1;
         }
 
