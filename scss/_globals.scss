@@ -16,6 +16,10 @@ body {
     color: $grayishBlue;
     line-height: 1.3;
 
+    @include breakpoint-up(large){
+        font-size: $font-med;
+    }
+
     &.noscroll {
         overflow: hidden;
     }
