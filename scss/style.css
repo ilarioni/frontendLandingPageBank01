@@ -518,6 +518,7 @@ button:hover, .button:hover {
 }
 
 .feature__description {
-  font-size: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
 }
 /*# sourceMappingURL=style.css.map */
