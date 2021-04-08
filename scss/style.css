@@ -155,9 +155,23 @@ a, a:visited, a:hover {
   padding-left: 1.5rem;
 }
 
+@media (min-width: 64em) {
+  .container--pall {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
 .container--py {
   padding-top: 4.375rem;
   padding-bottom: 4.375rem;
+}
+
+@media (min-width: 64em) {
+  .container--py {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
 }
 
 .container--px {
@@ -169,12 +183,24 @@ a, a:visited, a:hover {
   padding-top: 4.375rem;
 }
 
+@media (min-width: 64em) {
+  .container--pt {
+    padding-top: 6rem;
+  }
+}
+
 .container--pr {
   padding-right: 1.5rem;
 }
 
 .container--pb {
   padding-top: 4.375rem;
+}
+
+@media (min-width: 64em) {
+  .container--pb {
+    padding-bottom: 6rem;
+  }
 }
 
 .container--pl {

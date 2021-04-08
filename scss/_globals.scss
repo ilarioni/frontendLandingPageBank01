@@ -74,15 +74,25 @@ a, a:visited, a:hover {
         padding-bottom: 4.375rem;
         padding-right: 1.5rem;
         padding-left: 1.5rem;
+
+        // for desktop 
+        @include breakpoint-up(large){
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+        }
     }
 
-    // for desktop 
-    
+
 
     // py means padding on vertical y axis also it means padding top and bottom
     &--py {
         padding-top: 4.375rem;
         padding-bottom: 4.375rem;
+
+        @include breakpoint-up(large){
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+        }
     }
 
     // px measn padding on x axis, left and right, horizontal 
@@ -95,12 +105,19 @@ a, a:visited, a:hover {
     // pt padding top  pr padding right and so on 
     &--pt {
         padding-top: 4.375rem;
+
+        @include breakpoint-up(large){
+            padding-top: 6rem;
+        }
     }
     &--pr {
         padding-right: 1.5rem;
     }
     &--pb {
         padding-top: 4.375rem;
+        @include breakpoint-up(large){
+            padding-bottom: 6rem;
+        }
     }
     &--pl {
         padding-left: 1.5rem;
