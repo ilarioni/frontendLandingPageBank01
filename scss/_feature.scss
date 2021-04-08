@@ -1,4 +1,5 @@
 .feature {
+    background-color: $lightGrayishBlue;
 
     &__intro {
         margin-bottom: 3.75rem;
@@ -24,7 +25,6 @@
     }
 
     &__item {
-        border: 1px solid magenta;
         padding: 0.9375rem;
 
         @include breakpoint-up(medium){

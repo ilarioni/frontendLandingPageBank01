@@ -149,15 +149,15 @@ a, a:visited, a:hover {
 }
 
 .container--pall {
-  padding-top: 2.25rem;
-  padding-bottom: 2.25rem;
+  padding-top: 4.375rem;
+  padding-bottom: 4.375rem;
   padding-right: 1.5rem;
   padding-left: 1.5rem;
 }
 
 .container--py {
-  padding-top: 2.25rem;
-  padding-bottom: 2.25rem;
+  padding-top: 4.375rem;
+  padding-bottom: 4.375rem;
 }
 
 .container--px {
@@ -166,19 +166,19 @@ a, a:visited, a:hover {
 }
 
 .container--pt {
-  padding-top: 2.25rem;
+  padding-top: 4.375rem;
 }
 
 .container--pr {
-  padding-top: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .container--pb {
-  padding-top: 2.25rem;
+  padding-top: 4.375rem;
 }
 
 .container--pl {
-  padding-top: 1.5rem;
+  padding-left: 1.5rem;
 }
 
 .flex {
@@ -443,6 +443,10 @@ button:hover, .button:hover {
   }
 }
 
+.feature {
+  background-color: #f3f4f6;
+}
+
 .feature__intro {
   margin-bottom: 3.75rem;
 }
@@ -472,7 +476,6 @@ button:hover, .button:hover {
 }
 
 .feature__item {
-  border: 1px solid magenta;
   padding: 0.9375rem;
 }
 
