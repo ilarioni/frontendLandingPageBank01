@@ -461,6 +461,10 @@ button:hover, .button:hover {
   margin-bottom: 2.25rem;
 }
 
+.feature__intro {
+  margin-bottom: 3.75rem;
+}
+
 @media (min-width: 64em) {
   .feature__intro {
     width: 60%;
@@ -503,6 +507,16 @@ button:hover, .button:hover {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
+  }
+}
+
+.feature__icon {
+  margin-bottom: 1.875rem;
+}
+
+@media (min-width: 64em) {
+  .feature__icon {
+    margin-bottom: 2.75rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
