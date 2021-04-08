@@ -430,17 +430,35 @@ button:hover, .button:hover {
   margin-bottom: 2.25rem;
 }
 
-@media (min-width: 64em) {
+.feature__grid {
+  /*
+        @include breakpoint-up(large){
+            display: flex;
+        }
+        */
+}
+
+@media (min-width: 40em) {
   .feature__grid {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
 .feature__item {
   border: 1px solid magenta;
   padding: 0.9375rem;
+}
+
+@media (min-width: 40em) {
+  .feature__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+  }
 }
 
 @media (min-width: 64em) {
