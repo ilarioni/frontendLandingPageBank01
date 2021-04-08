@@ -104,15 +104,15 @@ body.noscroll {
 }
 
 h1, h2, h3 {
+  font-weight: 300;
+  line-height: 1.15;
+  color: #2d314d;
   margin-top: 0px;
 }
 
 h1 {
-  font-weight: 300;
-  font-size: 2.31rem;
-  line-height: 1.15;
-  color: #2d314d;
   margin-bottom: 1.5rem;
+  font-size: 2.31rem;
 }
 
 @media (min-width: 64em) {
@@ -131,6 +131,11 @@ h2 {
     font-size: 2.25rem;
     margin-bottom: 2.25rem;
   }
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: 2.25rem;
 }
 
 a, a:visited, a:hover {
@@ -454,6 +459,12 @@ button:hover, .button:hover {
 .hero__text p {
   line-height: 1.5;
   margin-bottom: 2.25rem;
+}
+
+@media (min-width: 64em) {
+  .feature__intro {
+    width: 60%;
+  }
 }
 
 .feature__grid {
