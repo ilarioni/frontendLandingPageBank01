@@ -557,4 +557,13 @@ button:hover, .button:hover {
   font-size: 0.875rem;
   line-height: 1.5;
 }
+
+.articles {
+  background-color: #fafafa;
+}
+
+.article__grid {
+  display: -ms-grid;
+  display: grid;
+}
 /*# sourceMappingURL=style.css.map */
