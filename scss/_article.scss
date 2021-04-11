@@ -10,9 +10,11 @@
 
     &__grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(14.375rem, 1fr));
+        // grid-template-columns: repeat(auto-fit, minmax(14.375rem, 1fr));  other way of threating to grids
 
-        /*
+
+        gap: 1.875rem;
+
         grid-template-columns: 1fr;
 
         @include breakpoint-up(medium){
@@ -22,7 +24,7 @@
         @include breakpoint-up(large){
             grid-template-columns: repeat(4, 1fr);
         }
-        */
+        
 
     }
 
@@ -31,7 +33,10 @@
     }
 
     &__image {
-
+        height: 12.5rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
     }
 
     &__text {

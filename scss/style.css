@@ -565,18 +565,29 @@ button:hover, .button:hover {
 .article__grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(14.375rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(14.375rem, 1fr));
-  /*
-        grid-template-columns: 1fr;
+  gap: 1.875rem;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
 
-        @include breakpoint-up(medium){
-            grid-template-columns: repeat(2, 1fr);  
-        }
+@media (min-width: 40em) {
+  .article__grid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
 
-        @include breakpoint-up(large){
-            grid-template-columns: repeat(4, 1fr);
-        }
-        */
+@media (min-width: 64em) {
+  .article__grid {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.article__image {
+  height: 12.5rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 /*# sourceMappingURL=style.css.map */
