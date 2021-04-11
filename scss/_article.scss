@@ -10,6 +10,9 @@
 
     &__grid {
         display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(14.375rem, 1fr));
+
+        /*
         grid-template-columns: 1fr;
 
         @include breakpoint-up(medium){
@@ -19,6 +22,7 @@
         @include breakpoint-up(large){
             grid-template-columns: repeat(4, 1fr);
         }
+        */
 
     }
 
