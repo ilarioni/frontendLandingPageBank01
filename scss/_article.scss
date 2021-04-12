@@ -45,6 +45,7 @@
     &__text {
         background-color: $white;
         padding:  1.875rem 1.875rem 2.5rem 1.875rem;
+        color: $grayishBlue;
 
         @include breakpoint-up(medium){
             padding: 1.875rem 1.562rem;   
@@ -52,14 +53,20 @@
     }
 
     &__author {
+        font-size: 0.625rem;
+        margin-bottom: 1rem;
 
     }
 
     &__title {
+        font-size: 1.065rem;
+        color: $darkBlue;
+        margin-bottom: 1rem;
 
     }
 
     &__description {
+        font-size: 0.8125rem;
 
     }
 
