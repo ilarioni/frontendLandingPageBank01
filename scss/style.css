@@ -92,6 +92,7 @@ body {
   color: #9698a6;
   line-height: 1.3;
   min-height: 300vh;
+  overflow-x: hidden;
 }
 
 @media (min-width: 64em) {
