@@ -4,15 +4,18 @@
     padding: 2.5rem;
     text-align: center;
 
-    @include breakpoint-up(large){
-        display: grid;
-        grid-template-columns: repeat(3, 1fr) 2fr;
-        grid-template-rows: repeat(2, 1fr);
-        grid-template-areas: 
-        "logo links1 links2 cta"
-        "social links1 links2 copyright";
+    
+    .container {
+        @include breakpoint-up(large){
+            display: grid;
+            grid-template-columns: repeat(3, 1fr) 2fr;
+            grid-template-rows: 1fr auto;
+            grid-template-areas: 
+            "logo links1 links2 cta"
+            "social links1 links2 copyright";
 
-        justify-items: start; 
+            justify-items: start; 
+        }
     }
 
     a {
@@ -45,6 +48,7 @@
 
         a {
             display: inline-block;
+            height: 1.25rem;
         }
 
         a:not(:last-child) { 
@@ -56,10 +60,13 @@
     &__links {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        font-size: 0.9375rem;
 
 
         @include breakpoint-up(large){
             align-items: start;
+            justify-content: space-between;
 
         }
 
@@ -83,7 +90,12 @@
         }
 
         a {
-            line-height: 2.25;
+
+            @include breakpoint-down(medium){
+                line-height: 2.25;
+                
+            }
+            
         }
 
     }
@@ -105,6 +117,7 @@
     }
 
     &__copyright {
+        font-size: 0.8125rem;
 
         @include breakpoint-up(large){
             grid-area: copyright;

@@ -561,6 +561,7 @@ button:hover, .button:hover {
 
 .articles {
   background-color: #fafafa;
+  padding: 5rem;
 }
 
 .article__grid {
@@ -642,13 +643,13 @@ button:hover, .button:hover {
 }
 
 @media (min-width: 64em) {
-  .footer {
+  .footer .container {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[3] 2fr;
         grid-template-columns: repeat(3, 1fr) 2fr;
-    -ms-grid-rows: (1fr)[2];
-        grid-template-rows: repeat(2, 1fr);
+    -ms-grid-rows: 1fr auto;
+        grid-template-rows: 1fr auto;
         grid-template-areas: "logo links1 links2 cta" "social links1 links2 copyright";
     justify-items: start;
   }
@@ -691,6 +692,7 @@ button:hover, .button:hover {
 
 .footer__social a {
   display: inline-block;
+  height: 1.25rem;
 }
 
 .footer__social a:not(:last-child) {
@@ -705,6 +707,10 @@ button:hover, .button:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.9375rem;
 }
 
 @media (min-width: 64em) {
@@ -712,6 +718,9 @@ button:hover, .button:hover {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -733,8 +742,10 @@ button:hover, .button:hover {
   }
 }
 
-.footer__links a {
-  line-height: 2.25;
+@media (max-width: 63.9375em) {
+  .footer__links a {
+    line-height: 2.25;
+  }
 }
 
 @media (min-width: 64em) {
@@ -750,6 +761,10 @@ button:hover, .button:hover {
   .footer__cta a.button {
     margin-bottom: 1.875rem;
   }
+}
+
+.footer__copyright {
+  font-size: 0.8125rem;
 }
 
 @media (min-width: 64em) {
