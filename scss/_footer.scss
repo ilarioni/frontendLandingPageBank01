@@ -10,7 +10,7 @@
         grid-template-rows: repeat(2, 1fr);
         grid-template-areas: 
         "logo links1 links2 cta"
-        "social links1 links2 cta";
+        "social links1 links2 copyright";
 
         justify-items: start; 
     }
@@ -40,6 +40,7 @@
         
         @include breakpoint-up(large){
             grid-area: social;
+            align-self: end;
         }
 
         a {
@@ -99,11 +100,17 @@
             @include breakpoint-down(medium){
                 margin-bottom: 1.875rem; 
             }
-            
+
         }
     }
 
     &__copyright {
+
+        @include breakpoint-up(large){
+            grid-area: copyright;
+            align-self: end;
+            justify-self: end;
+        }
 
     }
 

@@ -649,7 +649,7 @@ button:hover, .button:hover {
         grid-template-columns: repeat(3, 1fr) 2fr;
     -ms-grid-rows: (1fr)[2];
         grid-template-rows: repeat(2, 1fr);
-        grid-template-areas: "logo links1 links2 cta" "social links1 links2 cta";
+        grid-template-areas: "logo links1 links2 cta" "social links1 links2 copyright";
     justify-items: start;
   }
 }
@@ -683,6 +683,9 @@ button:hover, .button:hover {
 @media (min-width: 64em) {
   .footer__social {
     grid-area: social;
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
   }
 }
 
@@ -746,6 +749,17 @@ button:hover, .button:hover {
 @media (max-width: 63.9375em) {
   .footer__cta a.button {
     margin-bottom: 1.875rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .footer__copyright {
+    grid-area: copyright;
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
+    -ms-grid-column-align: end;
+        justify-self: end;
   }
 }
 /*# sourceMappingURL=style.css.map */
