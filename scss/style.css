@@ -637,9 +637,33 @@ button:hover, .button:hover {
 .footer {
   background-color: #2d314d;
   color: white;
+  padding: 2.5rem;
+  text-align: center;
 }
 
 .footer a {
   color: white;
+}
+
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 1.875rem;
+}
+
+.footer__social {
+  margin-bottom: 1.875rem;
+}
+
+.footer__social a:not(:last-child) {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.footer__links.col2 {
+  margin-bottom: 1.875rem;
+}
+
+.footer__cta a.button {
+  margin-bottom: 1.875rem;
 }
 /*# sourceMappingURL=style.css.map */
