@@ -10,7 +10,8 @@
         "_header.scss",
         "_hero.scss",
         "_feature.scss",
-        "_article.scss"
+        "_article.scss",
+        "_footer.scss"
     ],
     "names": [],
     "file": "style.css"
