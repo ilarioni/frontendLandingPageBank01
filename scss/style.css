@@ -650,6 +650,7 @@ button:hover, .button:hover {
     -ms-grid-rows: (1fr)[2];
         grid-template-rows: repeat(2, 1fr);
         grid-template-areas: "logo links1 links2 cta" "social links1 links2 cta";
+    justify-items: start;
   }
 }
 
@@ -697,6 +698,14 @@ button:hover, .button:hover {
 }
 
 @media (min-width: 64em) {
+  .footer__links {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+}
+
+@media (min-width: 64em) {
   .footer__links.col1 {
     grid-area: links1;
   }
@@ -719,6 +728,9 @@ button:hover, .button:hover {
 @media (min-width: 64em) {
   .footer__cta {
     grid-area: cta;
+    text-align: right;
+    -ms-grid-column-align: end;
+        justify-self: end;
   }
 }
 
