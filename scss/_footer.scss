@@ -21,7 +21,11 @@
 
     &__logo {
         display: inline-block;
-        margin-bottom: 1.875rem;
+
+        @include breakpoint-down(medium){
+            margin-bottom: 1.875rem;
+
+        }
 
         @include breakpoint-up(large){
             grid-area: logo;
@@ -30,9 +34,10 @@
     }
 
     &__social {
+        @include breakpoint-down(medium){
+            margin-bottom: 1.875rem;
+        }
         
-        margin-bottom: 1.875rem;
-
         @include breakpoint-up(large){
             grid-area: social;
         }
@@ -66,8 +71,10 @@
         }
 
         &.col2 {
-            margin-bottom: 1.875rem;
-
+            @include breakpoint-down(medium){
+                margin-bottom: 1.875rem;
+            }
+            
             @include breakpoint-up(large){
                 grid-area: links2;
             }
@@ -89,8 +96,10 @@
         }
 
         a.button {
-            margin-bottom: 1.875rem;
-
+            @include breakpoint-down(medium){
+                margin-bottom: 1.875rem; 
+            }
+            
         }
     }
 
