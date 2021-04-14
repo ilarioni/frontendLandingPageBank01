@@ -8,3 +8,7 @@ page one
 page two
 
 <img width="1280" alt="page2" src="https://user-images.githubusercontent.com/61503627/114682549-7e104d80-9d0f-11eb-931f-fbbc2b6f9851.png">
+
+page three footer
+
+<img width="1280" alt="page3" src="https://user-images.githubusercontent.com/61503627/114682756-adbf5580-9d0f-11eb-8c90-9ab492188266.png">
